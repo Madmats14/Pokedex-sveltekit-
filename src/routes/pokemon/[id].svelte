@@ -14,16 +14,15 @@
     let pokeDisplay = 'front_default';
     function pokeChange() {
         console.log("probando")
-        if (shiny = false) {
-            shiny = true;
-            return pokeDisplay = 'front_shiny'
+        if (shiny === false) {
+            pokeDisplay = 'front_shiny'
             
         }
-        if (shiny = true) {
-            shiny = false;
-            return pokeDisplay = 'front_default';
+        if (shiny === true) {
+            pokeDisplay = 'front_default';
             
         }
+        shiny = !shiny
     }
 </script>
 
